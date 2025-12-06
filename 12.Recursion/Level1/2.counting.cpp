@@ -1,3 +1,4 @@
+// TC :- T(n) = k + T(n-1)
 #include<iostream>
 using namespace std;
 
