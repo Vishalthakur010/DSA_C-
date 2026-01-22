@@ -1,3 +1,11 @@
+// Time Complexity
+//      Best Case: O(n) (already sorted)
+//      Average Case: O(n²)
+//      Worst Case: O(n²) (reverse sorted)
+
+// Space Complexity
+//      O(1) (in-place)
+
 #include<iostream>
 using namespace std;
 

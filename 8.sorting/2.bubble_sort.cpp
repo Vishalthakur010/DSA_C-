@@ -1,3 +1,11 @@
+// Time Complexity
+//      Best Case: O(n) (when array is already sorted and optimized version is used)
+//      Average Case: O(n²)
+//      Worst Case: O(n²)
+
+// Space Complexity
+//      O(1) (in-place)
+
 #include<iostream>
 using namespace std;
 
