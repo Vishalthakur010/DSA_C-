@@ -1,0 +1,36 @@
+// GFG :- quickSort
+
+#include<iostream>
+#include<vector>
+using namespace std;
+
+
+void quickSort(vector<int>& arr, int low, int high) {
+        // code here
+        if(low>=high) return;
+        int pivot=high;
+        int i=low-1;
+        int j=low;
+        
+        while(j<pivot){
+            if(arr[j]<arr[pivot]){
+                i++;
+                swap(arr[i], arr[j]);
+            }
+            j++;
+        }
+        ++i;
+        // i is the right position for the pivot element
+        swap(arr[i], arr[pivot]);
+        quickSort(arr, low, i-1);
+        quickSort(arr, i+1, high);
+    }
+
+int main(){
+    vector<int>arr{7,2,1,8,6,3,5,4};
+    quickSort(arr, 0, arr.size()-1);
+    for(auto i : arr){
+        cout << i << " ";
+    }
+    cout << endl;
+}
